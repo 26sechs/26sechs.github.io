@@ -9,11 +9,11 @@ left:50%;
 top:0px;
 }
 
-      a:link { text-decoration:monospace; font-weight:normal; color:#000000; }
+a:link { text-decoration: none; color:#000000; }
 a:visited { text-decoration:none; font-weight:normal; color:#000000; }
 a:hover { text-decoration:none; font-weight:normal; background-color:#fff; }
-a:active { text-decoration:none; font-weight:normal; background-color:#green; }
-a:focus { text-decoration:none; font-weight:normal; background-color:#green; }
+a:active { text-decoration:none; font-weight:normal; background-color: green; }
+a:focus { text-decoration:none; font-weight:normal; background-color: green; }
 
 body {
     font-family: monospace;
@@ -52,7 +52,7 @@ body {
 }
 .barcode a:hover div.w,
 .barcode a:hover div.b {
-    background: red;
+/*    background: red;*/
 }
 
 
