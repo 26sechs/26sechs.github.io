@@ -1,0 +1,62 @@
+
+
+
+.wtf {
+position:absolute;
+width:770px;
+margin-left:-385px;
+left:50%;
+top:0px;
+}
+
+      a:link { text-decoration:monospace; font-weight:normal; color:#000000; }
+a:visited { text-decoration:none; font-weight:normal; color:#000000; }
+a:hover { text-decoration:none; font-weight:normal; background-color:#fff; }
+a:active { text-decoration:none; font-weight:normal; background-color:#green; }
+a:focus { text-decoration:none; font-weight:normal; background-color:#green; }
+
+body {
+    font-family: monospace;
+    background-color: #00ff00;
+}
+
+
+.barcode {
+    font-size: 0;
+    line-height: 0;
+    width: 350px;
+    margin: 0 auto;
+    height: 200px;
+}
+.barcode div {
+    height: 100px;
+    float: left;
+}
+.barcode .b {
+    background: black;
+}
+.barcode .w {
+    background: white;
+}
+.barcode .s1 {
+    width: 2px;
+}
+.barcode .s2 {
+    width: 4px;
+}
+.barcode .s3 {
+    width: 6px;
+}
+.barcode .s4 {
+    width: 8px;
+}
+.barcode a:hover div.w,
+.barcode a:hover div.b {
+    background: red;
+}
+
+
+
+body.roterhintergrund {
+    background:red;
+}
