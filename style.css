@@ -55,8 +55,7 @@ body {
 /*    background: red;*/
 }
 
-
-
-body.roterhintergrund {
-    background:red;
+/* hack um .popover niedriger auf die seite zu tun*/
+body .popover {
+  top: 110px !important;
 }

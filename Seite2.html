@@ -4,7 +4,29 @@
     <head>
         <title> T. T. </title>
         
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="assets/bootstrap.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <!-- jquery (für bootstrap) -->
+        <script src="assets/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <!-- bootstrap javascript -->
+        <script src="assets/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+        
+        <!-- eigener style -->
         <link href="style.css" rel="stylesheet">
+        
+        <script type="text/javascript" charset="utf-8">
+        // jQuery: do this when page has loaded
+        $(function () {
+          // init bootstrap's popover plugin
+          $("[data-toggle='popover']").popover({
+            // attach all popovers to body
+            container: "body",
+            placement: "bottom",
+            trigger: "hover",
+            html: true
+          });
+        });
+        </script>
 
     </head>
     <!-- hier ist platz für kommentare -->
@@ -15,9 +37,13 @@
     
     <div class="barcode">
         <div class="b s1"></div>
-        <a href="perpeduum.html"><div class="w s4"></div></a>
+        <a href="perpeduum.html" data-toggle="popover" data-content="Vivamus <b>sagittis</b> lacus vel augue laoreet rutrum faucibus.<br><img src="http://subtlepatterns.com/images/transp_bg.png"">
+          <div class="w s4"></div>
+        </a>
         <div class="b s1"></div>
-        <div class="w s1"></div>
+        <a href="#" data-toggle="popover" data-content="the content">
+          <div class="w s1"></div>
+        </a>
         <div class="b s4"></div>
     </div>
     
