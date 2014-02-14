@@ -30,15 +30,29 @@ p4 {color: #000;position:fixed;               right: 50px; bottom: 12px;
   position: relative;
 }
 
+.barcode, #previews {
+  /* für die zentrierung vertikal*/
+  width: 350px;
+  margin: 0 auto;
+}
+
+#previews {
+  height: 16em;
+  overflow-y: hidden;
+}
+
+#previews div {
+  border: 1px solid black;
+  display: none;
+}
+
+#previews div.show {
+  display: block;
+}
+
 .barcode {
     font-size: 40px;
     line-height: 40px;
-    /* für abstand von oben */
-    position: relative;
-    top: 8em;
-    /* für die zentrierung vertikal*/
-    width: 350px;
-    margin: 0 auto;
 }
 
 .barcode div {
