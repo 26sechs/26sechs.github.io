@@ -24,15 +24,25 @@ p4 {color: #000;position:fixed;               right: 50px; bottom: 12px;
     font-size: 14px;
     font-family:monospace} /* beschreibung */
 
+
+#fancy-navigation {
+  height: 32em;
+  position: relative;
+}
+
 .barcode {
     font-size: 40px;
     line-height: 40px;
+    /* für abstand von oben */
+    position: relative;
+    top: 8em;
+    /* für die zentrierung vertikal*/
     width: 350px;
     margin: 0 auto;
-    height: 200px;
 }
+
 .barcode div {
-    height: 100px;
+    height: 3em;
     float: left;
 }
 .barcode .b {
@@ -56,9 +66,4 @@ p4 {color: #000;position:fixed;               right: 50px; bottom: 12px;
 .barcode a:hover div.w,
 .barcode a:hover div.b {
     background: #aaa;
-}
-
-/* hack um .popover niedriger auf die seite zu tun*/
-body .popover {
-  top: 110px !important;
 }

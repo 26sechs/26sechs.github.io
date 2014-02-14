@@ -20,10 +20,12 @@
           // init bootstrap's popover plugin
           $("[data-toggle='popover']").popover({
             // attach all popovers to body
-            container: "body",
-            placement: "bottom",
-            trigger: "hover",
-            html: true
+            container: "#fancy-navigation", // wird da reingetan
+            placement: "auto top", // wird über dem link positioniert
+            trigger: "hover", // wird angezeigt wenn maus drüber
+            html: true, // inahlt darf html tags wie bilder enthalten
+            delay: { show: 0, hide: 50000 }, // wie lange warten vor show oder hide in milisekunden
+            animation: false // nicht ein- und ausfaden
           });
         });
         </script>
@@ -36,10 +38,10 @@
 
     
    
-    
+  <div id="fancy-navigation">
     <div class="barcode">
         <div class="b s1"></div>
-        <a href="perpeduum.html" data-toggle="popover" data-content='Perpetuum Mobile.<br><br><img src="duchamp-jamp.jpg" class="img-responsive">'>
+        <a href="perpeduum.html" data-toggle="popover" data-content='Perpetuum Mobile.<br><br><img src="duchamp-jamp_quadrat.jpg" class="img-responsive">'>
           <div class="w s3"></div>
         </a>
         <div class="b s1"></div>
@@ -153,7 +155,8 @@
         <div class="b s1"></div> <!-- Ende -->
         
     </div><!-- ende .barcode -->
-  
+
+  </div><!-- ende #fancy-navigation -->
     
 <!-- NEUE IDEE    
 
