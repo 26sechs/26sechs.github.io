@@ -1,6 +1,5 @@
 
 
-
 .wtf {
 position:absolute;
 width:770px;
@@ -11,19 +10,23 @@ top:0px;
 
 a:link { text-decoration: none; color:#000000; }
 a:visited { text-decoration:none; font-weight:normal; color:#000000; }
-a:hover { text-decoration:none; font-weight:normal; background-color:#fff; }
-a:active { text-decoration:none; font-weight:normal; background-color: green; }
-a:focus { text-decoration:none; font-weight:normal; background-color: green; }
+a:hover { text-decoration:none; font-weight:normal; background-color:#aaa; }
+a:active { text-decoration:none; font-weight:normal; background-color: #fff; }
+a:focus { text-decoration:none; font-weight:normal; background-color: #fff; }
 
 body {
     font-family: monospace;
-    background-color: #00ff00;
+    background-color: #fff;
 }
 
+p4 {color: #000;position:fixed;               right: 50px; bottom: 12px;
+    color: #000; 
+    font-size: 14px;
+    font-family:monospace} /* beschreibung */
 
 .barcode {
-    font-size: 0;
-    line-height: 0;
+    font-size: 40px;
+    line-height: 40px;
     width: 350px;
     margin: 0 auto;
     height: 200px;
@@ -52,7 +55,7 @@ body {
 }
 .barcode a:hover div.w,
 .barcode a:hover div.b {
-/*    background: red;*/
+    background: #aaa;
 }
 
 /* hack um .popover niedriger auf die seite zu tun*/
